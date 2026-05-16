@@ -1,12 +1,22 @@
 # mac
-# lint - cmd +s
-from basics import *
 
 if __name__ == '__main__':  # special meaning for Python execution, but we will talk about it later.
 
-    testID = 0
+    testID = 1
 
     if testID == 0:
-        pass
+        print("hello world ") #string
+    elif testID == 1:  #elif = else if
+        print("Hello Julie")
+    
     else:
         print("wrong testID, not supported")
+
+    ''' 
+
+    == basic level class ===
+    - print
+    - basic operators : arithmetic operations
+    .....
+    
+    '''
