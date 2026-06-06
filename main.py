@@ -113,16 +113,95 @@ def basic_operators():
     #Q: calculate "a" plus 1 and print out "the result is 8"
     #                                                     ^ a +1
     a = 8 # "=" : assign the value from right to left
-    a = a+1   
     print("the result is %d"% a)
+
+
+    # data in "Disk"
+    # "CPU" process data : "Disk" -> "DRAM" -> "CPU"
+    #                                 ^^^^^ memory
+    
+    #Q: add "2" to a
+    a = 10 #variable
+    a = a+2 # <== 12
+    print("a is %d" % a)
+
+
+    #Q: add "1" to a
+    a = a+1 #<== 13
+    print("a is %d" % a)
+    
+    a += 1 # <== 14
+    print("a is %d" % a)
+
+    #Q: multiply "2" to a
+    a *=2 # a = a*2 # <== 28
+    print("a is %d" % a)
+
+    #Q: divide "a" by 2 and assign back to "a"
+    a /=2
+    print("a is %d" % a)
+
     
     return
 
+def basic_list_i():
 
+    a = 5 #<== variable a: object, memory
 
+    b = [3, 1, 2] #<== variable b: address of the list
+    #.   ^^ ^^.^^
+    #.   0. 1. 2
+    print(b[0])
+    print(b[1])
+    print(b[2])
+
+    #Q: Given a list "a", add "5" to the index-0 element of a
+    a = [6, 7, 8]
+    #.  ^^ a[0]
+    print(a)    
+    a[0] = a[0] + 5 # a[0] += 5
+    print(a)
+
+    #Q: Given a list "d", multiply 100 to the index-1 element of d
+    d = [6, 7]
+    #.   0. 1
+    
+    d[1] = d[1] * 100
+    print(d)
+
+    
+    # Q: combine two lists a and b to c
+    a= [6, 7]
+    b= [9, 10, 11]
+    # c = [6, 7, 9, 10, 11]
+    c = a + b
+    print(c)
+
+    print("------ append ------")
+    a = [6, 7]
+    #.   0  1 
+    #Q: append "-1" to a
+    #. a=> [6, 7, -1]
+    a = a + [-1]
+    #a.append(-1)        
+    print(a)
+
+    #HW0605 
+    #Q: Give 4 lists, comebine them together to a new list "z"
+    a= [3, 5]
+    b= [0, 2]
+    c = [-1]
+    d = [7]
+    z = [] # => [3, 5, 0, 2, -1, 7]
+    z = a + b + c + d
+    print(z)
+    
+
+# zoom link
+# 
 if __name__ == '__main__':  # special meaning for Python execution, but we will talk about it later.
 
-    testID = 2
+    testID = 3
 
     if testID == 0: #needs :
         print("hello world ") #string
@@ -130,6 +209,8 @@ if __name__ == '__main__':  # special meaning for Python execution, but we will 
         basic_print() #print  
     elif testID == 2:
         basic_operators() #operatioins
+    elif testID == 3:
+        basic_list_i() # list
     else:
         print("wrong testID, not supported")
 
@@ -137,8 +218,8 @@ if __name__ == '__main__':  # special meaning for Python execution, but we will 
 
     == basic level class ===
     - Part 1 - basics         
-        - print
-        - basic operators : arithmetic operations
+        - print <= done
+        - basic operators : arithmetic operations  <= done
         - list_i : basics
         - for loop / while loop 
         - list_ii : append, pop, del
