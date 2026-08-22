@@ -1,5 +1,97 @@
 # mac
 
+def leetcode_sum_up_all_odd_elements():
+    '''
+    n = 17
+
+    k = n % 8    # mod
+
+
+    => k =? 
+    
+    '''
+    
+    a = [3, 5, 1, 4, 2]
+    #.   0. 1. 2. 3. 4
+    #Q: sum up all odd elements, and print out the sum
+
+
+    #3+5+1 = 9
+    total_sum = 0
+    for num in a:
+        if num % 2 == 1:
+            total_sum += num
+
+    print(total_sum)
+
+    print("----------")
+    
+    a = [3, 5, 1, 4, 2, 8]
+    #.   0. 1. 2. 3. 4. 5
+    #    -6 -5 -4-3 -2 -1
+    #                  -7 <== (X)                 
+    
+    #Q1: print out the index-0 element in a
+    print(a[0])
+    print(a[1])
+
+    #Q: print out the length of a
+    print( len(a))
+    
+    #Q: print out the last element
+    print(a[len(a)-1])
+    
+
+
+    print("----------")
+
+    a = [3, 5, 1, 4, 2, 8]
+    #.   0. 1. 2. 3. 4. 5
+
+    #Q: sum up all odd elements, and print out the sum
+    #3+5+1 = 9
+    total_sum = 0
+    for i in [0, 1, 2, 3, 4, 5]:
+        if a[i] % 2 ==1:
+            total_sum += a[i]
+
+    print(total_sum)
+
+
+    print("----------")
+
+    a = [3, 5, 1, 4, 2, 8, 7]
+    #.   0. 1. 2. 3. 4. 5. 6
+
+    #Q: reset all even numbers to zero, and print out the new list "a"
+    #=> [3, 5, 1, 0, 0, 0]
+
+    for i in range(0, len(a), 1): #[0, 1, 2, 3, 4, 5]
+        if a[i] % 2 == 0:
+            a[i] = 0
+
+    print(a)
+
+    
+    print("=========")
+    '''
+    4x1 = 4
+    4x2 = 8
+    4x3 = 12
+    ....
+    4x9 = 36    
+    
+    '''
+    #Q: print out 4的99乘法表
+    
+    for a in range (1,10,1):
+        print ("4x %d = %d" % (a,4*a) )
+
+    
+
+    return 
+
+
 
 def basic_while_loop():
     
@@ -14,7 +106,11 @@ def leetcode_shuffle_two_lists():
     b = [6, 7, 0, 6, 7]
     #.   0. 1. 2. 3. 4
     #. =>  5  6  4 7 1 0 3 6 2 7
-    #HW0705
+    #HW0821
+    #for i in range( , , ):
+        
+
+    
 
 
     return 
@@ -65,6 +161,7 @@ def basic_range():
     res = list(range(2, 11, 1))
     print(res)
 
+
     # Q: create a list - consecutive numbers from -67 to 67
     res = list(range(-67, 68, 1))
     print(res)
@@ -93,7 +190,18 @@ def basic_range():
     res = list(range(5, -2, -2))
     print(res)
 
-    return
+
+    print("========= after 8/21 =========")
+
+    #Q: create a list, consecutive number : 6, 7, 8, 9, 10
+    res = list(range(6, 11, 1))
+    print(res)
+
+    #Q: create a list, consecutive number : 6, 5, 4, 3, 2
+    res = list(range(6, 1, -1))
+    print(res)
+    
+
 
 
 def leetcode_find_max():

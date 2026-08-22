@@ -4,7 +4,7 @@ from basics import *
 
 if __name__ == '__main__':  # special meaning for Python execution, but we will talk about it later.
 
-    testID = 8
+    testID = 10
 
     if testID == 0: #needs :
         print("hello world ") #string
@@ -25,8 +25,10 @@ if __name__ == '__main__':  # special meaning for Python execution, but we will 
     elif testID == 9:
         basic_range() #range
     elif testID == 10:
-        leetcode_shuffle_two_lists()
+        leetcode_sum_up_all_odd_elements()
     elif testID == 11:
+        leetcode_shuffle_two_lists()
+    elif testID == 10:
         basic_while_loop() #while
     else:
         print("wrong testID, not supported")
