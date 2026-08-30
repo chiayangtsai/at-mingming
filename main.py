@@ -1,10 +1,9 @@
 from basics import *
-# zoom link July 5 class  (copy the link below)
-# https://zoom.us/j/91313686526?pwd=Cpa9HjHz163Trxw1yMfBdbyLe4H7aM.1
+
 
 if __name__ == '__main__':  # special meaning for Python execution, but we will talk about it later.
 
-    testID = 10
+    testID = 11
 
     if testID == 0: #needs :
         print("hello world ") #string
@@ -28,8 +27,12 @@ if __name__ == '__main__':  # special meaning for Python execution, but we will 
         leetcode_sum_up_all_odd_elements()
     elif testID == 11:
         leetcode_shuffle_two_lists()
-    elif testID == 10:
+    elif testID == 12:
         basic_while_loop() #while
+    elif testID == 14:
+        basic_list_ii() # list methods
+    elif testID == 15:
+        basic_list_iii() # += =
     else:
         print("wrong testID, not supported")
 
@@ -38,9 +41,12 @@ if __name__ == '__main__':  # special meaning for Python execution, but we will 
     == basic level class ===
     - Part 1 - basics         
         - for loop / while loop <== DONE
-        - list_ii : append, pop, del
+        - list_ii : append, pop, del <===
+        - list_iii : +=, + , 拆掉重蓋, 加蓋
         - sliding window algorithm
+        - ASCII code <== chractor
         - string
+        - LUT (look-up table), KES algorithm
     
     - Part 2 - dict (dictionary)    
 

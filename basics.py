@@ -1,5 +1,57 @@
 # mac
 
+def basic_list_ii():
+    print("----- .append(element)-----")
+    #Q: add 0 to the end of list a => append 0
+    a = [6, 7]
+    # => a = [6, 7, 0]
+    a = a+[0]
+    a.append(0)
+    a += [0]
+    print (a)
+    
+    print("----- .pop(index)-----")
+    a= [6, 7, 0, 0, 0]
+    #Q: remove index-2 element in a
+    # a=> [6, 7, 0, 0]
+    x = a.pop(2)
+    print(x)
+    print(a)
+
+    #Q: remove the first element in a
+    a.pop(0)
+    #Q: remove the last element in a
+    a.pop(len(a)-1)
+    a.pop(-1)
+    print("---- if pop() => remove the last element in the list")
+    a.pop()
+    print(a)
+
+    print("---- pop()----")
+    n = [3, 1, 5, 4, 2]
+    #Q: remove the last element
+    k = n.pop()
+    print(n)
+    print(k)
+
+    print("------ TBV -------")
+    
+    return
+
+def basic_list_iii():
+
+    print("-- -----")
+
+    a= [6, 7]
+    #Q: append 0 to a
+    a = a + [0] # <== 拆掉重蓋
+    a += [0] # <== 加蓋
+    
+    
+
+    return 
+
+
 def leetcode_sum_up_all_odd_elements():
     '''
     n = 17
@@ -101,19 +153,41 @@ def basic_while_loop():
 
 def leetcode_shuffle_two_lists():
     #Q: Given two lists a and b, assume len(a) == len(b)
-    #.  shuffle the element in a and b following index order, and print out the results.
+    #.  shuffle the element in a and b following index order, and save the results to c, print out the results in c
     a = [5, 4, 1, 3, 2]
     b = [6, 7, 0, 6, 7]
+    c = []
+    
     #.   0. 1. 2. 3. 4
     #. =>  5  6  4 7 1 0 3 6 2 7
     #HW0821
-    #for i in range( , , ):
-        
+    for i in range(0,len(a),1):
+        #c = c + [a[i]]
+        #c = c + [b[i]]
+        c += [a[i]]
+        c += [b[i]]
+    print(c)
 
     
+    a = [5, 4, 1, 3, 2]
+    b = [6, 7, 0, 6, 7]
+    c = []
+    while len(a) !=0 or len(b) !=0:
+        c += [a.pop(0)]
+        c += [b.pop(0)]
+        
+    print(c)
 
+    print("------- what if len(a) != len(b)----")
+    #Q: Given two lists a and b, 
+    #.  shuffle the elements in a and b following index order, and save the results to c, print out the results in c
+    a = [5, 4, 1, 3, 2]
+    b = [6, 7, 0, 6, 7, 6, 7]
+    c = []
+    # c=> [5, 6, 4, 7, 1, 0, 36, 2, 7, 6, 7]
+    #HW0829
 
-    return 
+    
 
 # HW0620
 def leetcode_sum_up_elements():
@@ -434,6 +508,21 @@ def basic_list_i():
 
     print("last element = %d" % nums[len(nums) - 1])
     print("last element = %d" % nums[-1])
+
+    print("----- review list operation 0829 -----")
+    a = [7, 6, 5]
+    b = [6, 7]
+    #Q: combine a and b to c
+    # c=> [7, 6, 5, 6, 7]
+    c = a + b
+
+    
+    a = [7, 6, 5]
+    #Q: add a new element -1 to the end of a
+    # => [7, 6, 5,-1]
+
+    a = a+ [-1]
+
 
 
 def basic_loop():
